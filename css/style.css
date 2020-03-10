@@ -1,0 +1,31 @@
+*   {
+    padding: 0px;
+    margin: 0px;
+}
+
+header    {
+    display:flex
+
+}
+.left  {
+    width:10vw;
+    height: 5vw;
+    background-color: cadetblue;
+    margin-top: 3vw;
+}
+.header{
+    width: 80vw;
+    height: 5vw;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 3vw;
+}
+.right  {
+    width:10vw;
+    height: 5vw;
+    background-color: cadetblue;
+    margin-top: 3vw;
+}
+.containter{
+
+}
