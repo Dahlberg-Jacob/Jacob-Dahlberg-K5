@@ -2,10 +2,11 @@
     padding: 0px;
     margin: 0px;
 }
-
+body{
+    background-color: orange;
+}
 header    {
-    display:flex
-
+    display:flex;
 }
 .left  {
     width:10vw;
@@ -13,44 +14,59 @@ header    {
     background-color: cadetblue;
     margin-top: 3vw;
 }
+
 .header{
+    display:flex;
     width: 80vw;
     height: 85px;
     background-color: aquamarine;
     margin: auto;
     margin-top: 3vw;
 }
+.headline   {
+    width:50%;
+    font-size: 50px;
+    padding:10px;
+    padding-left: 40px;
+}
 .header ul{
     width:100%;
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
+
 }
 .H_Content{
+    display: inline-block;
     list-style: none;
-    padding: 20px;
+    padding-top: 20px;
     font-size: 40px;
     color:white;
-    border-radius:50%;
     background-clip:content-box;
+    position: relative
    
 }
 .H_Content ul.dropdown{
-    min-width: 10%;
+    min-width: 100%;
     background: aquamarine;
-    display: none;
     position: absolute;
-    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top:10px;
 }
 .H_Content :hover{  
     cursor: Pointer;
-    background-color: darkblue;
-    
+    background-color:rgb(101, 155, 137);
+    transition: ease-in 0.1s;
 }
 ul li:hover ul.dropdown{
-    display: block;
+    display:block;
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+    
 }
-.H_Content a {
+.H_Content .D_menu {
     text-decoration: none;
     color:white;
     padding-top:22px;
@@ -58,6 +74,13 @@ ul li:hover ul.dropdown{
     padding-left:30px;
     padding-right:30px;
 }
+.dropdown a {
+    text-decoration: none;
+    color:white;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
 .right  {
     width:10vw;
     height: 85px;
