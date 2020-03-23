@@ -9,23 +9,58 @@ header    {
 }
 .left  {
     width:10vw;
-    height: 5vw;
+    height: 85px;
     background-color: cadetblue;
     margin-top: 3vw;
 }
 .header{
     width: 80vw;
-    height: 5vw;
+    height: 85px;
     background-color: aquamarine;
     margin: auto;
     margin-top: 3vw;
 }
+.header ul{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.H_Content{
+    list-style: none;
+    padding: 20px;
+    font-size: 40px;
+    color:white;
+    border-radius:50%;
+    background-clip:content-box;
+   
+}
+.H_Content ul.dropdown{
+    min-width: 10%;
+    background: aquamarine;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.H_Content :hover{  
+    cursor: Pointer;
+    background-color: darkblue;
+    
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.H_Content a {
+    text-decoration: none;
+    color:white;
+    padding-top:22px;
+    padding-bottom: 17px;
+    padding-left:30px;
+    padding-right:30px;
+}
 .right  {
     width:10vw;
-    height: 5vw;
+    height: 85px;
     background-color: cadetblue;
     margin-top: 3vw;
-}
-.containter{
-
 }
